@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FarmCheck</title>
+</head>
+<body>
+<h1>Welcome to FarmCheck <3</h1>
+<form>
+    {% for col in df_headings %}
+        <input type="checkbox" id=col name=col>
+        <label for=col>{{ col }}</label><br>
+    {% endfor %}
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
